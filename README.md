@@ -13,7 +13,7 @@ A simple weather forecast web application that provides real-time weather data a
   - Fast and responsive
   - humidity and wind speed information
 
-- WEATHERAPP_JS
+- WeatherApp_js
 
   \*\* Overview
   This project is built using "Tailwind CSS", a utility-first CSS framework for fast and efficient styling.
