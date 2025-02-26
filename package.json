@@ -4,6 +4,7 @@
   "description": "Weather Forecast Application Development to search weather of different cities built up using HTML, Tailwind CSS and javascript.",
   "main": "index.js",
   "scripts": {
+    "dev": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

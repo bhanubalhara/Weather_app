@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Tags added -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="./output.css" rel="stylesheet" />
+    <meta name="author" content="Bhawana Balhara" />
+    <!-- Title tags added -->
+    <title>Weather Application</title>
+    <!-- Link of Css file -->
+    <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <!-- Veiw Port are starts here -->
+  <body
+    class="bg-gradient-to-r from-green-300 to-indigo-300 min-h-screen flex flex-col items-center p-5 text-white"
+  >
+    <!-- Styling of div where all information will be shown -->
+    <div
+      class="bg-gray-200 opacity-60 text-yellow-900 p-4 rounded-xl shadow-lg w-full max-w-md mt-10"
+    >
+      <!-- Heading of the page -->
+      <h1 class="text-2xl font-bold text-center">🌦️ Weather Forecast</h1>
+      <!-- Input field to search cities -->
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter the city name 💭"
+        class="w-full p-3 border rounded-lg mt-3 focus:ring focus:ring-blue-400"
+      />
+      <!-- Button to search the cities -->
+      <button
+        class="w-full p-3 border rounded-lg mt-3 text-white bg-gradient-to-r from-green-700 to-indigo-700 transition-all duration-500 hover:from-indigo-400 hover:to-green-400 hover:scale-105"
+      >
+        🔍 Search
+      </button>
+      <!-- Button to search current location -->
+      <button
+        class="w-full p-3 border rounded-lg mt-3 text-white bg-gradient-to-r from-red-300 to-yellow-300 transition-all duration-500 hover:from-yellow-500 hover:to-red-400 hover:scale-105"
+      >
+        📍 My Location
+      </button>
+      <!-- Field to show the recent searched cities which bydehault is set to hidden -->
+      <select
+        id="recentCities"
+        class="w-full p-3 mt-2 rounded-xl border hidden"
+      ></select>
+      <!-- Area to show the weather result of the searched city -->
+      <div
+        id="weatherResult"
+        class="mt-5 text-center text-lg font-semibold"
+      ></div>
+      <!-- Area to show weather forecast of 5 days of the searched city -->
+      <div id="forecast" class="mt-6 grid grid-cols-1 gap-3"></div>
+    </div>
   </body>
 </html>
